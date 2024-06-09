@@ -1,5 +1,5 @@
-# Basics of working with xml and json
->This repository was created for homework in lessons №17 - "Basics of working with xml and json".
+# Multithreading
+>This repository was created for homework in lessons №18 - "Multithreading".
 ## Tasks
 
 ### Mandatory task:  
