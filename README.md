@@ -3,54 +3,23 @@
 ## Tasks
 
 ### Mandatory task:  
-0. Write a program to parse xml document.  
+0.  Create three streams T1, T2 and T3  
+	Implement the execution of the flow in the sequence T3 -> T2 -> T1  
+	(using join method)  
 
-   The program receives as input a string to the folder where the document is located.
-   You only need to parse one document - accordingly, provide various checks, for example, that there are no files in the folder, or that there are several xml documents in the folder and other possible checks.
-
-   It is necessary to parse the xml document and write the contents of the line tags into another document.
-   The file name for the entry must consist of tag values ​​and look like: <firstName>_<lastName>_<title>.txt
-
-   
+1.  Create a program that simulates morning: reading the news, tomorrow, coffee.  
+	Give each thread a name and priority from the config file. Let the name and priority of the thread be specified through the properties file.  
+	Let there be 3 threads.  
+	Create and run 3 threads  
 
 ### Extra credit task:  
-Additionally implement the following functionality:
- 
-    -if the value 1 is entered in the properties file - parse the document using SAX  
-    -if the value 2 is entered in the properties file - parse the document using DOM
-   
-***
+2.	There is a service station. There can be a maximum of a certain number of cars in service per hundred.  
+	Create a class that will run in a separate thread and will add cars for service at the service station.  
+	Create a class that will run in a separate thread and will pick up fixed cars from the service station.  
+	Let the maximum number of machines available for service be specified through the properties file.  
+	Use synchronized, wait, notify.  
+	
+### Very difficult task:
+3.  Write a multi-threaded bounded buffer using ReentrantLock.	  
 
-## XML document for parsing: 
-```xml
-
-<?xml version="1.0"?>
-<sonnet type="Shakespearean">
-  <author>
-    <lastName>Shakespeare</lastName>
-    <firstName>William</firstName>
-    <nationality>British</nationality>
-    <yearOfBirth>1564</yearOfBirth>
-    <yearOfDeath>1616</yearOfDeath>
-  </author>
-  <title>Sonnet 130</title>
-  <lines>
-    <line>My mistress' eyes are nothing like the sun,</line>
-    <line>Coral is far more red than her lips red.</line>
-    <line>If snow be white, why then her breasts are dun,</line>
-    <line>If hairs be wires, black wires grow on her head.</line>
-    <line>I have seen roses damasked, red and white,</line>
-    <line>But no such roses see I in her cheeks.</line>
-    <line>And in some perfumes is there more delight</line>
-    <line>Than in the breath that from my mistress reeks.</line>
-    <line>I love to hear her speak, yet well I know</line>
-    <line>That music hath a far more pleasing sound.</line>
-    <line>I grant I never saw a goddess go,</line>
-    <line>My mistress when she walks, treads on the ground.</line>
-    <line>And yet, by Heaven, I think my love as rare</line>
-    <line>As any she belied with false compare.</line>
-  </lines>
-</sonnet>
-
-```
-     
+4.  Write a multi-threaded bounded buffer using synchronized.  
