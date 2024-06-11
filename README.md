@@ -13,7 +13,7 @@
 	Create and run 3 threads  
 
 ### Extra credit task:  
-2.	There is a service station. There can be a maximum of a certain number of cars in service per hundred.  
+2.	There is a service station. A service station can have a maximum of a certain number of cars in service.  
 	Create a class that will run in a separate thread and will add cars for service at the service station.  
 	Create a class that will run in a separate thread and will pick up fixed cars from the service station.  
 	Let the maximum number of machines available for service be specified through the properties file.  
