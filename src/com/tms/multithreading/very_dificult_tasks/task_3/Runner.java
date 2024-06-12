@@ -1,6 +1,10 @@
 package com.tms.multithreading.very_dificult_tasks.task_3;
 
-import java.util.concurrent.locks.ReentrantLock;
+/**
+ * Task:
+ *
+ * Write a multiple-threads bounded buffer using ReentrantLock.
+ */
 
 public class Runner {
 
